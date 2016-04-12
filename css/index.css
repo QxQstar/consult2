@@ -29,7 +29,7 @@ body,html{
 	content:'.';display: block;clear:both; height: 0; width: 0; visibility: hidden;
 }
 .page{
-	margin:50px 0 0px 20px;  padding-bottom: 50px;
+	margin:50px 0 0px -10px;  padding-bottom: 50px;
 }
 .page .content{
 	display: table;width: 100%;table-layout: fixed;
@@ -38,20 +38,40 @@ body,html{
 	display: table-cell;padding-left: 20px; 
 }
 .col_1{
-	border-right: 1px solid #8F8A8A;
+	border-right: 1px solid #8F8A8A; width: 300px;
 }
+#carousel{
+	position: relative; width: 70%; height: 200px;border: 1px solid #8E8C8C; 
+	background-size:100% 100%; background-repeat: no-repeat;
+}
+.hotspot div a{
+	position: absolute; left: 0; bottom: 0; width: 100%;text-align: center;color: #fff;
+	background-color: rgba(0,0,0,0.4); height: 30px;
+}
+.col_1 .hotspot h1,.col_1 .recomm h1{
+ 	font-size:18px;color: #0A0A0A;
+ }
+ /*.rightComm{
+ 	display: table;width: 100%;table-layout: fixed;
+ }
+.rightComm .commItem{
+	display: table-cell; 
+}*/
 .comm h1{
 	font-size:15px; color: #A41F1F; 
 }
-.comm li a{
+.comm li a,.recomm li a{
 	color: #252525;font-size: 14px;line-height: 22px; text-decoration: none;
+}
+.comm .more{
+	float: right; margin-right:20%; font-size: 14px; color: #AC4A4A; 
 }
 /*.page .left{
 	float: left; margin-right: 50px;width: 200px; border-right: 1px solid #8F8A8A;
 }*/
 .page .typeList{
 	margin-bottom: 20px;
-	height: 40px; width: 50%; line-height: 40px; background-color: rgba(170,0,0,1);
+	height: 40px; width: 60%; line-height: 40px; background-color: rgba(170,0,0,1);
 	transition:all 1s;
 	-moz-transition: all 1s; /* Firefox 4 */
 	-webkit-transition: all 1s; /* Safari 和 Chrome */
@@ -62,19 +82,19 @@ body,html{
 	font: 15px '宋体';text-decoration: none; color:#EDE1E1;
 }
 .typeList:hover{
-	transform: scaleX(1.7);
+	transform: scaleX(1.5);
 	transform-origin:left;
 
-	-ms-transform: scaleX(1.7); 		/* IE 9 */
+	-ms-transform: scaleX(1.5); 		/* IE 9 */
 	-ms-transform-origin:left ;		/* IE 9 */
 
-	-webkit-transform: scaleX(1.7);	/* Safari 和 Chrome */
+	-webkit-transform: scaleX(1.5);	/* Safari 和 Chrome */
 	-webkit-transform-origin:left;	/* Safari 和 Chrome */
 
-	-moz-transform: scaleX(1.7);		/* Firefox */
+	-moz-transform: scaleX(1.5);		/* Firefox */
 	-moz-transform-origin:left;		/* Firefox */
 
-	-o-transform: scaleX(1.7);		/* Opera */
+	-o-transform: scaleX(1.5);		/* Opera */
 	-o-transform-origin:left;	
 }
 .typeList:hover a{
