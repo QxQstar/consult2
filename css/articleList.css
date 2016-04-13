@@ -1,8 +1,5 @@
-body,html{
-	height: 100%;padding: 0; margin: 0;
-}
-.container{
-	position: relative;height: 100%; min-height: 100%;
+*{
+	padding: 0; margin: 0
 }
 .nav{
 	height: 50px;text-align: center; background-color:#090909;
@@ -14,7 +11,7 @@ body,html{
 	 display:inline-block;
 }
 .navList .navItem{
-	float: left;margin-right: 30px;height: 50px; line-height: 15px;list-style: none; 
+	float: left;margin-right: 30px;height: 50px; line-height: 50px;list-style: none; 
 }
 .navItem a{
 	color: #fff; font-size: 15px; text-decoration: none;
@@ -29,19 +26,29 @@ body,html{
 	content:'.';display: block;clear:both; height: 0; width: 0; visibility: hidden;
 }
 .page{
-	width: 90%; margin:0 auto; margin-top:50px;
+	width: 80%; margin:0 auto; margin-top:50px;
 }
 /*.articleList h1{
 	 
 }*/
-h1 a{
-	text-decoration: none; color:rgba(150,0,0,1);font-size: 20px; 
+h1{
+	line-height: 25px;
 }
+h1 a{
+	text-decoration: none; color:#252525;font-size: 18px; 
+}
+h1 a:hover{
+	color:#CB6161;
+}
+
 .articleList p{
-	font: 14px; text-indent: 2em; color: #625F5F; line-height: 22px;
+	font: 14px; text-indent: 2em; color: #494949; line-height: 22px;
 }
 .articleList p:first-letter{
 	font-size: 25px;
+}
+.articleList .more{
+	float: right; margin-right: 50px; color: #C66E6E; font-size: 14px;
 }
 .control{
 	text-align: center;

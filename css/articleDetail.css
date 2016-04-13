@@ -1,3 +1,6 @@
+*{
+	padding: 0; margin: 0;
+}
 body,html{
 	height: 100%;padding: 0; margin: 0;
 }
@@ -14,7 +17,7 @@ body,html{
 	 display:inline-block;
 }
 .navList .navItem{
-	float: left;margin-right: 30px;height: 50px; line-height: 15px;list-style: none; 
+	float: left;margin-right: 30px;height: 50px; line-height: 50px;list-style: none; 
 }
 .navItem a{
 	color: #fff; font-size: 15px; text-decoration: none;
@@ -29,21 +32,21 @@ body,html{
 	content:'.';display: block;clear:both; height: 0; width: 0; visibility: hidden;
 }
 .page{
-	width: 800px; margin:0 auto; margin-top:50px;
+	width: 80%; margin:0 auto; padding-bottom: 50px;
 }
 .articleList h1{
-	 font-size: 20px; text-align: center;
+	 color:#252525;font-size: 18px;
+}
+.articleList .img{
+	text-align: center;
 }
 .articleList p{
-	font: 15px; text-indent: 2em; color: #625F5F; line-height: 25px;
-}
-.control{
-	text-align: center;
+	font: 14px; text-indent: 2em; color: #494949; line-height: 175%;
 }
 .footer
  {
- 	position:absolute;bottom:0;width:100%;height:50px;
+ 	position:absolute;bottom:-40px;width:100%;height:50px;background-color:rgba(0,0,0,0.2) 
 }
 .footer p{
-	font-size: 15px;text-align: center;
+	font-size: 15px;text-align: center; height: 50px; line-height: 50px;
 }
